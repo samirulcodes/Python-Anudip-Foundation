@@ -61,16 +61,17 @@ print(c)
 
 # arbitary / variable length argument--- any number of agrument we pass -- use * operator
 
-def sum(*x):
-    print(x)
+# def sum(*x):
+#     print(x)
     
-a=int(input("enter first"))
-b=int(input("enter second"))
+# a=int(input("enter first"))
+# b=int(input("enter second"))
 
-sum()
-sum(a)
-sum(b)
-sum(a,b)
-sum(1,2,3,4) 
+# sum()
+# sum(a)
+# sum(b)
+# sum(a,b)
+# sum(1,2,3,4) 
+
 
 
