@@ -30,6 +30,13 @@ print("Minimum:", min_num)
 
 
 # 4.Accept a name from the user and display that in lower case using lower() function
+def lowercase(name):
+# Converts a given name to lowercase
+  lower_name = name.lower()
+  print("Name in lowercase:", lower_name)
+
+# Get the user's name
 name = input("Enter your name: ")
-lowerCase = name.lower()
-print("Name in lowercase:", lowerCase)
+
+# Call the function 
+lowercase(name)
