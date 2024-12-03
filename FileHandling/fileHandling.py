@@ -1,3 +1,4 @@
+# To store the data permanently. Read data from file and write data into the file
 # The key function for working with files in Python is the open() function.
 # The open() function takes two parameters; filename, and mode. ('filename','mode'--- r,w,a)
 # r - read (default)
@@ -32,10 +33,12 @@
 
 # ANOTHER METHOD
 
+# not mandatory to close() when using with function
+
 # read
 # with open('FileHandling/myFile.txt','r') as file:
 #     print(file.read())
-#     file.close()
+#     file.close()  
 
 
 # write
@@ -46,8 +49,47 @@
 
 
 # append
-with open('FileHandling/myFile.txt','a') as file:
-    file.write(" Heyy! how are you ")
+# with open('FileHandling/myFile.txt','a') as file:
+#     file.write(" Heyy! how are you ")
+
+
+# Count(read) total no. of line in a file
+
+# file = open("FileHandling/myFile.txt","r")
+# file.read()
+# count=0
+# for l in file:
+#     count +=1
+# print(count)
+# file.close()
+
+
+# with open('FileHandling/myFile.txt', 'r') as file:
+#     lines = file.readlines()
+# totalLines = len(lines) 
+# print(f'Total number of lines: {totalLines}')
+
+
+# Count(read) total no. of character in a file
+
+# with open('FileHandling/myFile.txt', 'r') as file:
+#     lines = file.read()
+#     totalChar = len(lines)
+
+# print(f"Total number of characters: {totalChar}")
+
+
+# Wap to copy one file to another.
+
+
+with open('FileHandling/myFile.txt', 'r') as copyFile:
+    # print(copyFile.read()) 
+    with open('FileHandling/myFile1.txt', 'w') as pasteFile:
+        for line in copyFile:
+            pasteFile.write(line) 
+
+
+
     
 
 
