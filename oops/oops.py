@@ -69,13 +69,13 @@
 # obj=B()  #o/p -- B constructor
 
 # eg -2
-class A:
-    def init(self):
-        print("A constructor")
+# class A:
+#     def init(self):
+#         print("A constructor")
 
-class B():
-    def init(self):
-         print("B constructor")
+# class B():
+#     def init(self):
+#          print("B constructor")
 
-obj=A() 
-obj.init()   #o/p -- A constructor
+# obj=A() 
+# obj.init()   #o/p -- A constructor

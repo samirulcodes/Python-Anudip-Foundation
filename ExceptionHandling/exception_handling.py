@@ -52,10 +52,23 @@
   
 # Example - 5
 
-try:
-  print("Hello")
-  # print(Hello)    # throws an error , in this case line 57 will execute
-except:
-  print("Something went wrong")
-else:
-  print("Nothing went wrong")
+# try:
+#   print("Hello")
+#   # print(Hello)    # throws an error , in this case line 57 will execute
+# except:
+#   print("Something went wrong")
+# else:
+#   print("Nothing went wrong")
+
+
+# ANUDIP FOUNDATION 
+# try:
+#   a=100
+#   b=0
+#   print("hii")
+#   c=a/b
+#   print(c)
+# except:
+#   print("hello")
+
+
