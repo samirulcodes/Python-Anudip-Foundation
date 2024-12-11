@@ -35,9 +35,7 @@
 
 # delete methods
 fruit=['apple','mango','cherry','pineapple']
-rm=['apple','mango']
-for i in rm:
-    fruit.remove(i)
+del fruit[1]
 print(fruit)
 # del fruit[1]
 # fruit.pop(2)
@@ -46,8 +44,14 @@ print(fruit)
 # fruit.remove('mango')
 # print(fruit)
 
+#  removing multiple elements from list
+fruit=['apple','mango','cherry','pineapple']
+rm=['apple','mango']
+for i in rm:
+    fruit.remove(i)
 
-# lenght
+
+# length
 # fruit=['apple','mango','cherry',['apple','mango','cherry']]
 # print(len(fruit))
 
