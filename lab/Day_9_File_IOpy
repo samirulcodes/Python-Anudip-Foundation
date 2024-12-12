@@ -1,0 +1,54 @@
+# Q1 WAP to  Read and display lines from a text file:
+
+#  Opening the File:
+with open('myFile.txt', 'r') as file:
+    for line in file:   # this loop read each line
+        print(line)
+
+# output -- in my case " Hello Worlds " is the output because in myFile.txt only Hello World is there
+
+
+# Q2. Count and display the total number of words in a text file:
+
+# initializing word_count to 0
+word_count = 0
+
+# Opening the File:
+with open("myFile.txt", 'r') as file:
+    for line in file:  # this loop read each line
+        words = line.split() # Split into words
+        word_count += len(words) # Counts the words using len()
+
+print("Total words:", word_count)
+
+# output --  in my case 2 because Hello World , so there is only 2 word
+
+
+# Q3. WAP to Count uppercase characters in a text file:
+
+# initializing upper_count to 0
+upper_count = 0
+
+#  Opening the File:
+with open("myFile.txt", 'r') as file:
+    for line in file:  # this loop read each line
+        for char in line:  # this loop read each character in line
+            if char.isupper():
+                upper_count += 1
+
+print("Total uppercase character is:", upper_count)
+
+# output --  in my case Total uppercase character is: 2 because Hello World , only H and W is uppercase
+
+
+# Q4.WAP to Display words less than 4 characters from a text file:
+
+#  Opening the File:
+with open("myFile.txt", 'r') as file:
+    for line in file:  # this loop read each line
+        words = line.split() # split into each words
+        for word in words:
+            if len(word) < 4:  # checking word length if less than 4
+                print(word)
+
+# output -- in my case only "hi my" is coming as output beacuse only this two word is less than 4 character
