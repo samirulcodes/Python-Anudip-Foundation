@@ -1,9 +1,7 @@
 def main():
     # Sample list of student records stored as tuples
     students = [
-        ("Alice", [85, 90, 78]),
-        ("Bob", [70, 88, 92]),
-        ("Charlie", [95, 100, 98]),
+        
     ]
 
     # Main menu loop
