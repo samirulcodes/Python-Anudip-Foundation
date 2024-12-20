@@ -37,7 +37,6 @@ print("Total Revenue:", np.sum(revenue))
 """
 
 # .Hi! Can you please generate a program to identify overweight individuals using numpy.
-'''
 import numpy as np
 
 # Example data
@@ -60,26 +59,3 @@ overweight_individuals = np.array(names)[overweight_indices]
 
 # Display results
 print("Overweight individuals:", overweight_individuals.tolist())
-''' 
-
-
-# I have a dataset of daily temperatures over a week, and I want to calculate statistics like the mean, median, variance and standard deviation of temperatures. Can you please generate a complete program using Python numpy.
-
-
-import numpy as np
-
-# Input dataset: daily temperatures over a week (in degrees Celsius)
-temperatures = np.array([23.4, 25.1, 22.8, 24.5, 26.0, 21.9, 23.7])
-
-# Calculate statistics
-mean_temp = np.mean(temperatures)
-median_temp = np.median(temperatures)
-variance_temp = np.var(temperatures)
-std_deviation_temp = np.std(temperatures)
-
-# Print the results
-print("Daily Temperatures (°C):", temperatures)
-print(f"Mean Temperature: {mean_temp:.2f}°C")
-print(f"Median Temperature: {median_temp:.2f}°C")
-print(f"Temperature Variance: {variance_temp:.2f}")
-print(f"Standard Deviation of Temperature: {std_deviation_temp:.2f}")
